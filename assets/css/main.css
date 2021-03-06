@@ -1997,6 +1997,10 @@
 				width: 30%;
 			}
 
+			.feature-grid .feature .content .linebreak{
+				display: inline;
+			}
+
 				.feature-grid .feature .image img {
 					display: inline;
 					max-width: 100%;
@@ -2013,6 +2017,14 @@
 				margin-left: 5%;
 				text-align: left;
 			}
+
+		@media screen and (min-width: 1281px) {
+
+			.feature-grid .feature .content .linebreak{
+				display: none;
+			}
+	
+		}
 
 		@media screen and (max-width: 1280px) {
 
