@@ -7,12 +7,9 @@ html {
 }
 
 .carousel {
-  min-width: 900px;
-  max-width: 1236px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 48px;
-  padding-right: 48px;
   position: relative;
 }
 
@@ -210,9 +207,10 @@ html {
   position: relative;
   vertical-align: middle;
   display: flex;
+  width: 100%;
 }
 .carousel__image img{
-  max-width:70%;
+  max-width:100%;
   height:auto;
   text-align: center;
   border-radius: 100%;
