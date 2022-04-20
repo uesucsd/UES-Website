@@ -2329,7 +2329,7 @@
 			border-radius: 4px;
 			display: flex;
 			flex-direction: row;
-			padding: 15px;
+			/* padding: 15px; */
 		}
 
 		.image.left, .image.right {
@@ -2989,7 +2989,7 @@
 			text-transform: none !important;
 		}
 
-		@media screen and (max-width: 1080px) {
+		@media screen and (max-width: 1280px) {
 
 			.navPanelToggle {
 				display: block;
