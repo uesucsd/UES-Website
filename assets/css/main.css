@@ -1656,7 +1656,7 @@
 		@media screen and (max-width: 480px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 9pt;
 			}
 
 		}
@@ -2081,8 +2081,9 @@
 		@media screen and (max-width: 480px) {
 
 			.feature-grid .feature .content,
-			.feature-grid .feature .image {
-				display: block;
+			.feature-grid .feature .image, article {
+				display: flex;
+				direction: column;
 				margin-left: 0 !important;
 				margin-right: 0 !important;
 				text-align: center !important;
@@ -2322,37 +2323,54 @@
 		border-radius: 4px;
 		border: 0;
 		display: inline-block;
+		/* commented out 4/14/22
 		position: relative;
+		*/
 	}
 
 		.image img {
-			border-radius: 4px;
+			border-radius: 4px;		
 			display: flex;
-			flex-direction: row;
-			/* padding: 15px; */
+			flex-direction: column;	
+			padding: 15px;
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.image.left img, .image.right img {
+				border-radius: 4px;		
+				display: flex;
+				flex-direction: column;	
+				padding: 15px;
+				max-width: none;
+				float:none;
+			}
+
 		}
 
 		.image.left, .image.right {
-			max-width: 40%;
-			height: auto;
+			/* max-width: 40%; */
+ 			height: auto;
 
 		}
 
-			.image.left img, .image.right img {
+			.image.left img, .image.right img { /* .image.left img, .image.right img */
 				max-width: 100%;
 				position: relative;
 				height: auto;
 			}
 
 		.image.left.flyer{
-			max-width:30%;
+			/* max-width:30%; */
 			height:auto;
 			width:auto;
 		}
 
 		.image.left {
 			float: left;
+			/* Comment out 4/14/22
 			padding: 0 1.5em 1em 0;
+			*/
 			top: 0.25em;
 		}
 
@@ -2855,7 +2873,8 @@
 			margin: 0;
 			padding: 0;
 			position: absolute;
-			top: 0;
+			top: 10px;
+			right: 20x;
 		}
 
 		#header nav {
@@ -2967,6 +2986,15 @@
 
 		}
 
+		.logo{
+			/*width: 100px;*/
+			top: 50px;
+			float: left;
+			margin-top: 5px;
+			width: 40px;
+			height: 100px;
+				}
+
 /* Menu */
 
 	.navPanelToggle {
@@ -2989,7 +3017,7 @@
 			text-transform: none !important;
 		}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 1080px) {
 
 			.navPanelToggle {
 				display: block;
