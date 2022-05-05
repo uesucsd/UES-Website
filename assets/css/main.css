@@ -1982,8 +1982,9 @@
 			input[type="reset"],
 			input[type="button"],
 			button,
+			/* April 14, 2022 Change padding from 0 to 1*/
 			.button {
-				padding: 0;
+				padding: 1;
 			}
 
 		}
@@ -2315,6 +2316,7 @@
 		.icon > .label {
 			display: none;
 		}
+		
 
 /* Image */
 
@@ -2329,7 +2331,7 @@
 			border-radius: 4px;
 			display: flex;
 			flex-direction: row;
-			/* padding: 15px; */
+			padding: 15px;
 		}
 
 		.image.left, .image.right {
@@ -2966,6 +2968,15 @@
 			}
 
 		}
+	/* April.14th, 2020 Logo */
+		.logo{
+			/*width: 100px;*/
+			top: 50px;
+			float: left;
+			margin-top: 5px;
+			width: 40px;
+			height: 100px;
+				}
 
 /* Menu */
 
@@ -2989,7 +3000,7 @@
 			text-transform: none !important;
 		}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 1080px) {
 
 			.navPanelToggle {
 				display: block;
