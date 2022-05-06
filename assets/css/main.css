@@ -2335,19 +2335,6 @@
 			padding: 15px;
 		}
 
-		@media screen and (max-width: 480px) {
-
-			.image.left img, .image.right img {
-				border-radius: 4px;		
-				display: flex;
-				flex-direction: column;	
-				padding: 15px;
-				max-width: none;
-				float:none;
-			}
-
-		}
-
 		.image.left, .image.right {
 			/* max-width: 40%; */
  			height: auto;
@@ -2378,6 +2365,32 @@
 			float: right;
 			padding: 0 0 1em 1.5em;
 			top: 0.25em;
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.image.left, .image.right {
+				justify-content: center;
+				align-items: center;
+				float: none;
+				padding-top: 10px;
+				padding-left: 50px;
+				padding-right: 50px;
+				padding-bottom: 10px;
+			}
+
+			/*
+			.image.left img, .image.right img {
+				border-radius: 4px;		
+				display: flex;
+				flex-direction: column;	
+				padding: 15px;
+				max-width: none;
+				float:none;
+			}
+			*/
+			
+
 		}
 
 		.image.fit {
