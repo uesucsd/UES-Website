@@ -2336,19 +2336,19 @@
 		}
 
 		.image.left, .image.right {
-			/* max-width: 40%; */
+			max-width: 60%;
  			height: auto;
 
 		}
 
 			.image.left img, .image.right img { /* .image.left img, .image.right img */
-				max-width: 100%;
+				max-width: 90%;
 				position: relative;
 				height: auto;
 			}
 
 		.image.left.flyer{
-			/* max-width:30%; */
+			max-width:50%;
 			height:auto;
 			width:auto;
 		}
