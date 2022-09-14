@@ -2332,7 +2332,7 @@
 			border-radius: 4px;		
 			display: flex;
 			flex-direction: column;	
-			padding: 15px;
+			/*padding: 15px; */
 		}
 
 		.image.left, .image.right {
@@ -2345,6 +2345,7 @@
 				max-width: 90%;
 				position: relative;
 				height: auto;
+				padding: 15px;
 			}
 
 		.image.left.flyer{
