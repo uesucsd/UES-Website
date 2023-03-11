@@ -3189,6 +3189,7 @@
 		background-image: url("images/overlay.png"), url("../../images/newbanner.JPG");
 		background-position: center top;
 		background-size: contain;
+		/*background-repeat: repeat, no-repeat;*/
 		line-height: 1.75;
 		text-align: center;
 	}
