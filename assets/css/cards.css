@@ -4,18 +4,19 @@ body {
   }
   
   .slider-container {
-    position: static;
-    margin: auto;
-    height: 450px;
-    width: 1000px;
-    top: 60px;
+    position: relative;
+    /*margin: auto;*/
+    left: -10%;
+    height: 400px;
+    width: 1400px;
+    top: 0px;
     display: flex;
   }
   
   .card {
     display: flex;
-    height: 450px;
-    width: 400px;
+    height: 320px;
+    width: 350px;
     background-color: #17141d;
     border-radius: 10px;
     border-style: solid;
@@ -63,7 +64,7 @@ body {
     position: absolute;
     max-width:85%;
     width: 85%;
-    top: 20%;
+    top: 25%;
     left: 10%;
     border-radius: 100%;
   }
@@ -74,6 +75,15 @@ body {
     width: 50%;
     top: 80%;
     left: 50%;
+  }
+
+  .link{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
   }
   
   .bar {
