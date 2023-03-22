@@ -3184,11 +3184,11 @@
 	}
 
 	#banner {
-		padding: 16em 0 6em 0;
+		padding: 16em 0 10em 0;
 		background-attachment: fixed;
 		background-image: url("images/overlay.png"), url("../../images/newbanner.JPG");
 		background-position: center top;
-		background-size: contain;
+		background-size: cover;
 		line-height: 1.75;
 		text-align: center;
 	}
@@ -3209,7 +3209,7 @@
 			color: white;
 			font-size: 1.5em;
 			margin-bottom: .75em;
-			text-transform: ;
+			text-transform: uppercase;
 		}
 
 		@media screen and (max-width: 1280px) {
