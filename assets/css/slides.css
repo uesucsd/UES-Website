@@ -6,31 +6,42 @@ h2 {
 	line-height: 2.2;
 }
 
-button {
-	border: none;
-	border-radius: 5px;
-	padding: .5rem 1rem;
-	background-color: dodgerblue;
-	color: white;
-	margin: 1rem 0;
-	font-size: 1rem;
-}
-
 input[type="radio"] {
     opacity: 1 !important;
     z-index: 10 !important; 
 }
 
 .slide_wrapper {
+	margin: auto;
 	position: relative;
-	width: 500px;
+	width: 75%;
 	height: 300px;
 	overflow: hidden;
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
 	padding: 1rem;
+	background: #e5e9f1;
 }
+
+.slide_image{
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+	vertical-align: middle;
+	display: flex;
+	width: 100%;
+	background: #e5e9f1;
+  }
+  .slide_image img{
+	width: auto;
+	max-height: 85%;
+	text-align: center;
+  }
+  .slide_image :first-child{
+
+  }
 
 input {
 	appearance: auto;
@@ -52,10 +63,6 @@ input[type="radio"] {
 	background: dodgerblue;
 	border-radius: 50%;
 	cursor: pointer;
-}
-
-input:last-of-type {
-	margin: 0;
 }
 
 input:focus {
@@ -91,14 +98,6 @@ input + *[aria-label]:before {
 	z-index: 1;
 	padding: .5rem;
 	background-color: rgba(0,0,0,0.5);
-}
-
-section {
-	padding: 1rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 }
 
 input:checked + * {

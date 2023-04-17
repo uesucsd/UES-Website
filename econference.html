@@ -268,38 +268,59 @@
 
 					<div class="slide_wrapper">
 						<input type="radio" name="image-slide" checked="checked">
-						<picture aria-label="Random Picture 1">
-							<img src="https://picsum.photos/500/300?random=1" alt="Random Picture 1">
-						</picture>
+						<div class="slide_image">
+							<a href="https://home.kpmg/xx/en/home.html"><img src="images\kpmg.png" style="width:100%"></a>
+						</div>
 						
 						<input type="radio" name="image-slide">
-						<picture aria-label="Random Picture 2">
-							<img src="https://picsum.photos/500/300?random=2" alt="">
-						</picture>
+						<div class="slide_image">
+							<a href="https://www.qualcomm.com/"><img src="images\qualcomm.png" style="width:100%"></a>
+						</div>
 					
 						<input type="radio" name="image-slide">
-						<picture aria-label="Link image">
-							<a href="https://picsum.photos/500/300?random=3" target="_blank">
-								<img src="https://picsum.photos/500/300?random=3" alt="">
-							</a>
-						</picture>
+						<div class="slide_image">
+							<a href="https://www.mossadams.com/home"><img src="images\mossadams.png" style="width:100%"></a>
+						</div>
 						
 						<input type="radio" name="image-slide">
-						<picture>
-							<img src="https://picsum.photos/500/300?random=4" alt="">
-						</picture>
+						<div class="slide_image">
+							<a href="https://www.wellsfargo.com/"><img src="images\wellsfargo.jpg" style="width:100%"></a>
+						</div>
 						
 						<input type="radio" name="image-slide">
-						<section>
-							<h2>
-								This is not an image!
-							</h2>
-							<p>You could also just use a container with some text in it</p>
-							<button>Call to action, bitch!</button>
-						</section>
+						<div class="slide_image">
+							<a href="https://www2.deloitte.com/us/en.html"><img src="images\deloitte.png" style="width:100%"></a>
+						</div>
+  
+						<input type="radio" name="image-slide">
+						<div class="slide_image">
+							<a href="https://www.ey.com/en_us"><img src="images\ey.png" style="width:100%"></a>
+						</div>
+
+						<!--<script>
+							var slideIndex = 0;
+							showSlides();
+							
+						function showSlides() {
+							var i;
+							var slides = document.getElementsByClassName("slide_image");
+							var dots = document.getElementsByClassName("image_slide");
+							for (i = 0; i < slides.length; i++) {
+							  slides[i].style.display = "none";  
+							}
+							slideIndex++;
+							if (slideIndex > slides.length) {slideIndex = 1}    
+							for (i = 0; i < dots.length; i++) {
+							  dots[i].className = dots[i].className.replace(" active", "");
+							}
+							slides[slideIndex-1].style.display = "block";  
+							dots[slideIndex-1].className += " active";
+							setTimeout(showSlides, 5000); // Change image every 2 seconds
+						  }
+						  </script>-->
 					</div>
-					<!--
-					<h2> Honored Guests </h2>
+					
+					<!--<h2> Honored Guests </h2>
 					<p style="font-size:17px;color:black">
 					TBD
 
@@ -307,27 +328,27 @@
 
 					<div class="slideshow-container">
                         <div class="mySlides fade">
-                          <a href="https://home.kpmg/xx/en/home.html%22%3E"><img src="images\kpmg.png" style="width:100%"></a>
+                          <a href="https://home.kpmg/xx/en/home.html"><img src="images\kpmg.png" style="width:100%"></a>
                         </div>
 
                         <div class="mySlides fade">
-                          <a href="https://www.qualcomm.com/%22%3E"><img src="images\qualcomm.png" style="width:100%"></a>
+                          <a href="https://www.qualcomm.com/"><img src="images\qualcomm.png" style="width:100%"></a>
                         </div>
 
                         <div class="mySlides fade">
-                          <a href="https://www.mossadams.com/home%22%3E"><img src="images\mossadams.png" style="width:100%"></a>
+                          <a href="https://www.mossadams.com/home"><img src="images\mossadams.png" style="width:100%"></a>
                         </div>
 
                         <div class="mySlides fade">
-                          <a href="https://www.wellsfargo.com/%22%3E"><img src="images\wellsfargo.jpg" style="width:100%"></a>
+                          <a href="https://www.wellsfargo.com/"><img src="images\wellsfargo.jpg" style="width:100%"></a>
                         </div>
 
                         <div class="mySlides fade">
-                          <a href="https://www2.deloitte.com/us/en.html%22%3E"><img src="images\deloitte.png" style="width:100%"></a>
+                          <a href="https://www2.deloitte.com/us/en.html"><img src="images\deloitte.png" style="width:100%"></a>
                         </div>
 
                         <div class="mySlides fade">
-                          <a href="https://www.ey.com/en_us%22%3E"><img src="images\ey.png" style="width:100%"></a>
+                          <a href="https://www.ey.com/en_us"><img src="images\ey.png" style="width:100%"></a>
                         </div>
 
 						</div>
