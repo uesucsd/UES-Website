@@ -1675,6 +1675,10 @@
 		font-weight: 700;
 	}
 
+	.logoUpperLeft {
+		color: #FFFFFF
+	}
+
 	em, i {
 		font-style: italic;
 	}
