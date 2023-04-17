@@ -1676,8 +1676,7 @@
 	}
 
 	.logoUpperLeft {
-		color: #ffffff;
-		font-weight: 700;
+		color: #FFFFFF
 	}
 
 	em, i {
@@ -2203,7 +2202,7 @@
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		-ms-appearance: none;
-		appearance: none;
+		appearance: auto;
 		display: block;
 		float: left;
 		margin-right: -2em;
@@ -3194,6 +3193,7 @@
 		background-image: url("images/overlay.png"), url("../../images/newbanner.JPG");
 		background-position: center top;
 		background-size: cover;
+		/*background-repeat: repeat, no-repeat;*/
 		line-height: 1.75;
 		text-align: center;
 	}
