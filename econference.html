@@ -267,57 +267,46 @@
 					We will have honored guests from the following companies attending! </p>
 
 					<div class="slide_wrapper">
-						<input type="radio" name="image-slide" checked="checked">
+						<input type="radio" id="radio1" name="image-slide" checked="checked">
 						<div class="slide_image">
 							<a href="https://home.kpmg/xx/en/home.html"><img src="images\kpmg.png" style="width:100%"></a>
 						</div>
 						
-						<input type="radio" name="image-slide">
+						<input type="radio" id="radio2" name="image-slide">
 						<div class="slide_image">
 							<a href="https://www.qualcomm.com/"><img src="images\qualcomm.png" style="width:100%"></a>
 						</div>
 					
-						<input type="radio" name="image-slide">
+						<input type="radio" id="radio3" name="image-slide">
 						<div class="slide_image">
 							<a href="https://www.mossadams.com/home"><img src="images\mossadams.png" style="width:100%"></a>
 						</div>
 						
-						<input type="radio" name="image-slide">
+						<input type="radio" id="radio4" name="image-slide">
 						<div class="slide_image">
 							<a href="https://www.wellsfargo.com/"><img src="images\wellsfargo.jpg" style="width:100%"></a>
 						</div>
 						
-						<input type="radio" name="image-slide">
+						<input type="radio" id="radio5" name="image-slide">
 						<div class="slide_image">
 							<a href="https://www2.deloitte.com/us/en.html"><img src="images\deloitte.png" style="width:100%"></a>
 						</div>
   
-						<input type="radio" name="image-slide">
+						<input type="radio" id="radio6" name="image-slide">
 						<div class="slide_image">
 							<a href="https://www.ey.com/en_us"><img src="images\ey.png" style="width:100%"></a>
 						</div>
 
-						<!--<script>
-							var slideIndex = 0;
-							showSlides();
-							
-						function showSlides() {
-							var i;
-							var slides = document.getElementsByClassName("slide_image");
-							var dots = document.getElementsByClassName("image_slide");
-							for (i = 0; i < slides.length; i++) {
-							  slides[i].style.display = "none";  
-							}
-							slideIndex++;
-							if (slideIndex > slides.length) {slideIndex = 1}    
-							for (i = 0; i < dots.length; i++) {
-							  dots[i].className = dots[i].className.replace(" active", "");
-							}
-							slides[slideIndex-1].style.display = "block";  
-							dots[slideIndex-1].className += " active";
-							setTimeout(showSlides, 5000); // Change image every 2 seconds
-						  }
-						  </script>-->
+						<script type="text/javascript">
+							var counter = 1;
+							setInterval(function(){
+								document.getElementById('radio' + counter).checked = true;
+								counter++;
+								if(counter>6) {
+									counter = 1;
+								}
+							}, 5000);
+						  </script>
 					</div>
 					
 					<!--<h2> Honored Guests </h2>
