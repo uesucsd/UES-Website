@@ -7,9 +7,12 @@ html {
 }
 
 .carousel {
-  max-width: 100%;
+  min-width: 900px;
+  max-width: 1236px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 48px;
+  padding-right: 48px;
   position: relative;
 }
 
@@ -140,7 +143,7 @@ html {
 }
 
 .carousel__track {
-  font-size: 10px;
+  font-size: 0;
   transition: all 0.3s ease 0s;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
@@ -152,7 +155,6 @@ html {
   padding-right: 16px;
   vertical-align: top;
   white-space: normal;
-  flex-direction:column;
 }
 
 .carousel__item--desktop-in-1 {
@@ -177,7 +179,7 @@ html {
 
 .demo-container {
   display: flex;
-  position: relative;
+  position: absolute;
   top: 0;
   align-items: center;
   bottom: 0;
@@ -193,64 +195,13 @@ html {
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  border-radius: 100%;
+  border-radius: 3px;
   font-size: 56px;
-  height: 250 px;
+  height: 250px;
   width: 100%;
 }
 
-.carousel__image{
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  position: relative;
-  vertical-align: middle;
-  display: flex;
-  width: 100%;
-}
-.carousel__image img{
-  max-width:100%;
-  height:auto;
-  text-align: center;
-  border-radius: 100%;
-}
-
-.carousel__image p{
-  display: none;
-}
-
-.carousel__image img:hover{
-  opacity: 0.5;
-}
-
-.carousel__image img:hover ~ p{
-  opacity: 0.8;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  color: #000;
-  font-size: 24px;
-}
-
-.name{
-  display:block;
-  font-size: 16px;
-  margin: 0 0 0 0;
-  text-align: center;
-}
-
-.title{
-  display:block;
-  font-size: 12px;
-  margin: 0 0 0 0;
-  text-align: center;
-}
-
-/* .carousel__item:nth-child(1) .demo-content {
+.carousel__item:nth-child(1) .demo-content {
   background-color: #216485;
 }
 
@@ -276,41 +227,35 @@ html {
 
 .carousel__item:nth-child(7) .demo-content {
   background-color: #243127;
-} */
+}
 
 @media screen and (max-width: 1023px) {
   .carousel {
     padding-left: 0;
     padding-right: 0;
   }
-
   .carousel__activator:nth-of-type(n):checked ~ .carousel__controls:nth-of-type(n) {
     display: none;
   }
   .carousel__activator:nth-of-type(n):checked ~ .carousel__screen .carousel__track {
     transform: none;
   }
-
   .carousel__screen {
     margin-left: 0;
     margin-right: 0;
   }
-
   .carousel__track {
     overflow-x: auto;
     width: auto;
     padding-left: 48px;
     padding-right: 48px;
   }
-
   .carousel__item--tablet-in-1 {
     width: 90%;
   }
-
   .carousel__item--tablet-in-2 {
     width: 45%;
   }
-
   .carousel__item--tablet-in-3 {
     width: 30%;
   }
@@ -320,18 +265,13 @@ html {
     padding-left: 0;
     padding-right: 0;
   }
-
   .carousel__item--mobile-in-1 {
     width: 90%;
   }
-
   .carousel__item--mobile-in-2 {
     width: 45%;
   }
-
   .carousel__item--mobile-in-3 {
     width: 30%;
   }
-}
-
-/*# sourceMappingURL=carousel.css.map */
+}/*# sourceMappingURL=carousel.css.map */
