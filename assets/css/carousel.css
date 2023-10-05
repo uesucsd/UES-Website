@@ -254,7 +254,7 @@ html {
   text-align: center;
 }
 
-/*.carousel__item:nth-child(1) .demo-content {
+.carousel__item:nth-child(1) .demo-content {
   background-color: #216485;
 }
 
@@ -280,7 +280,7 @@ html {
 
 .carousel__item:nth-child(7) .demo-content {
   background-color: #243127;
-}*/
+}
 
 @media screen and (max-width: 1023px) {
   .carousel {
