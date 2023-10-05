@@ -7,12 +7,9 @@ html {
 }
 
 .carousel {
-  min-width: 900px;
-  max-width: 1236px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 48px;
-  padding-right: 48px;
   position: relative;
 }
 
@@ -143,7 +140,7 @@ html {
 }
 
 .carousel__track {
-  font-size: 0;
+  font-size: 10px;
   transition: all 0.3s ease 0s;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
@@ -155,6 +152,7 @@ html {
   padding-right: 16px;
   vertical-align: top;
   white-space: normal;
+  flex-direction: column;
 }
 
 .carousel__item--desktop-in-1 {
@@ -179,7 +177,7 @@ html {
 
 .demo-container {
   display: flex;
-  position: absolute;
+  position: relative;
   top: 0;
   align-items: center;
   bottom: 0;
@@ -195,13 +193,68 @@ html {
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  border-radius: 3px;
+  border-radius: 100%;
   font-size: 56px;
+  height: 250px;
+  width: 100%;
+  height: 250 px;
+  width: 100%;
+}
+
+.carousel__image {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  position: relative;
+  vertical-align: middle;
+  display: flex;
   height: 250px;
   width: 100%;
 }
 
-.carousel__item:nth-child(1) .demo-content {
+.carousel__image img {
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  border-radius: 100%;
+}
+
+.carousel__image p {
+  display: none;
+}
+
+.carousel__image img:hover {
+  opacity: 0.5;
+}
+
+.carousel__image img:hover ~ p {
+  opacity: 0.8;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  color: #000;
+  font-size: 24px;
+}
+
+.name {
+  display: block;
+  font-size: 16px;
+  margin: 0 0 0 0;
+  text-align: center;
+}
+
+.title {
+  display: block;
+  font-size: 12px;
+  margin: 0 0 0 0;
+  text-align: center;
+}
+
+/*.carousel__item:nth-child(1) .demo-content {
   background-color: #216485;
 }
 
@@ -227,7 +280,7 @@ html {
 
 .carousel__item:nth-child(7) .demo-content {
   background-color: #243127;
-}
+}*/
 
 @media screen and (max-width: 1023px) {
   .carousel {

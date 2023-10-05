@@ -59,12 +59,15 @@ $animationSpeed: 40s;
 	.slide {
 		height: 100px;
 		width: 250px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.slider__images img{
-		position: absolute;
 		max-height: 80%;
 		max-width: 200px;
-		top: 20%
+		height: 50%;
+		width: auto;
 	  }
 }
