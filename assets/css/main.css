@@ -1847,10 +1847,15 @@
 		white-space: nowrap;
 	}
 
+		button#Econference {
+			background-color: #ff0037;
+		}
+
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		button:hover,
+		button#Econference:hover,
 		.button:hover {
 			background-color: #3e3c45;
 		}
